@@ -1,76 +1,153 @@
 .account-page .account-page__inner {
-  width: 980px;
-  margin: 60px auto;
-  padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 400px;
+  height: 450px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  background-color: #F3EBF6;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
-.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
-  float: left;
-  width: 50%;
+.account-page{
+  align-items: center;
 }
+.account-page .account-page__inner1 {
+ 
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #F3EBF6;
+  width: 400px;
+  height: 600px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  overflow: scroll;
+}
+
+.actions{
+  padding-left: 150px;
+}
+
+
 .account-page .account-page__inner:after {
   clear: both;
   content: "";
   display: block;
 }
 .account-page .account-page__header h2 {
-  margin-bottom: 10px;
-  letter-spacing: 3px;
-  font-size: 40px;
-  font-weight: 200;
+  margin-bottom: 20px;
+  letter-spacing: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px ;
+  padding-left: 100px;
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
 }
 .account-page .account-page__header h2:after {
   content: "";
   display: block;
   width: 60px;
   margin-top: 5px;
-  border-bottom: 1px solid #38aef0;
+  border-bottom: 1px solid #f05d38;
 }
-.account-page .account-page__header h5 {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 200;
+
+
+
+form.form1 {
+  padding-top: 40px;
 }
-.account-page .account-page__header .btn {
-  margin-top: 20px;
-  color: #fff;
-  background-color: #ccc;
-  font-size: 14px;
-}
-.account-page .field {
-  margin-bottom: 10px;
-}
-.account-page .field .field-label {
-  padding: 10px 0;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 200;
-}
+
+
 .account-page .field .field-label i {
   font-size: 11px;
 }
-.account-page .field .field-input input {
-  width: 100%;
-  padding: 10px;
+.account-page  .field-input input {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
   letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+.account-page .migi {
+  width: 100px;
+}
+.field-label {
+  color: #740e6b;
+  padding-left: 100px;
+}
+.field-label1 {
+  color: #740e6b;
+  padding-left: 50px;
+}
+a {
+  color: #740e6b;
+  padding-left: 170px;
+}
+
+.field1 {
+  padding-left: 50px;
+}
+.field-label2 {
+  font-size: 30px;
+  color: #740e6b;
+  padding-left: 150px;
+  padding-bottom: 30px;
+}
+
 .account-page .btn {
   display: inline-block;
   height: 50px;
+  width: 100px;
   padding: 0 30px;
   line-height: 50px;
   letter-spacing: 1px;
   text-align: center;
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
+}
+.account-page .btn {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.account-page .btn1 {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  padding: 0 0px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
 }
 .account-page input[type=submit] {
   float: left;
   margin-top: 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: #ed21dc;
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;
@@ -92,9 +169,9 @@
 }
 
 #error_explanation {
+  box-sizing: border-box;
   margin: 20px 0;
-  padding: 20px 30px;
-  border: 1px solid #ddd;
+  padding: 20px 15px;
   border-radius: 2px;
 }
 #error_explanation h2 {
@@ -104,8 +181,9 @@
 }
 #error_explanation ul {
   margin: 0;
-  padding-left: 17px;
+  padding-right: 0px;
   list-style: square;
+
 }
 #error_explanation li {
   margin: 0;
