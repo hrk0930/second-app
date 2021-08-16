@@ -37,15 +37,6 @@
   text-decoration: none;}
 
 
-  margin        : auto;                 /* サンプル用 中央寄せ */
-  box-sizing    : border-box;           /* 罫線も含む長さ      */
-  width         : 71px;                /* BOXの幅             */
-  height        : 41px;                /* BOXの高さ           */
-  background    : #7f007f;              /* BOXの背景色         */
-  border        : 3px solid #ff66ff;    /* 枠線の指定          */
-  border-radius : 19px;               /* 角丸の指定          */
-
-
 .room {
   padding: 20px 0 40px;
 }
