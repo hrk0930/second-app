@@ -11,7 +11,6 @@
   align-items: center;
 }
 .account-page .account-page__inner1 {
- 
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   background-color: #F3EBF6;
@@ -94,6 +93,7 @@ form.form1 {
   color: #740e6b;
   padding-left: 50px;
 }
+
 a {
   color: #740e6b;
   padding-left: 170px;
@@ -183,8 +183,8 @@ a {
   margin: 0;
   padding-right: 0px;
   list-style: square;
-
 }
+
 #error_explanation li {
   margin: 0;
   padding: 0;
