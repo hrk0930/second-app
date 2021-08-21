@@ -1,14 +1,14 @@
 class ChatsController < ApplicationController
   def index
     @chat = Chat.new
-    @chat = Chat.all
-    @chat = Chat.order("created_at DESC")
+    @chats = Chat.all
+    @chats = Chat.order("created_at DESC")
   end
 
   def create
-    @chat = Chat.new(content_params)
+    @chat = Chat.new(text_params)
      if@chat.save
-      redirect_to chats_path
+      redirect_to  chats_path 
      else
       render :index
      end
@@ -21,7 +21,7 @@ class ChatsController < ApplicationController
   end
 
   private
-  def content_params
+  def text_params
     params.require(:chat).permit(:text, :image).merge(user_id: current_user.id)
   end
 

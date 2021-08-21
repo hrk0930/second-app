@@ -10,10 +10,10 @@
 </div>
 
 <div class="messages0">
-<%= render partial: 'message', collection: @messages, class: 'messages1'%>
+<%= render partial: 'chat', collection: @chats, class: 'messages1'%>
 </div>
 
-<%= form_with model: @message, class: 'form-1', local: true do |f| %>
+<%= form_with model: @chat, class: 'form-1', local: true do |f| %>
   <div class="form-input1">
     <%= f.text_field :text, class: 'form-message1', placeholder: 'メッセージを送ってね〜♫' %>
     <label class="form-image1">

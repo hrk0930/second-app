@@ -88,14 +88,14 @@
   overflow: scroll;
 }
 
-.message {
+.messagec {
   color: rgb(247, 244, 244);
   margin-top    : 20px;                 /* サンプル用 中央寄せ */
   box-sizing    : border-box;           /* 罫線も含む長さ      */
   width         : 415px;                /* BOXの幅             */
   height        : 65px;                /* BOXの高さ           */
-  background    : #7f007f;              /* BOXの背景色         */
-  border        : 3px solid #ff66ff;    /* 枠線の指定          */
+  background    : #134b0b;              /* BOXの背景色         */
+  border        : 3px solid #8af78e;    /* 枠線の指定          */
   border-radius : 31px;               /* 角丸の指定          */
   overflow: scroll;
 }
