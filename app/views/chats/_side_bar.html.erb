@@ -1,0 +1,19 @@
+<div class="side-bar-header1">
+ <div class="header-name1">
+    <%= current_user.name %>
+  </div>
+  <div class="create-room1">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn0'%>
+  </div>
+</div>
+
+    <div class="header-titleA">
+       <div class="header-title5">
+          メモ帳
+        </div>
+        <%#= render partial: 'message', collection: @memo, class: 'messages1'%>
+    </div>
+
+  <div class="right-header">
+  </div>
+  

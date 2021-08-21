@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
 
   def destroy
     messages = message.find(params[:id])
-    message.content.destroy
+    message.text.destroy
     redirect_to root_path
   end
 
