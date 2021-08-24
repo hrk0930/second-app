@@ -3,15 +3,20 @@ class MessagesController < ApplicationController
     @message = Message.new
     @messages = Message.all
     @messages = Message.order("created_at DESC")
+    #@memos = Memo.all
   end
 
   def create
+
+
+  
     @message = Message.new(content_params)
      if@message.save
       redirect_to messages_path
      else
       render :index
      end
+
   end
 
   def destroy
@@ -24,5 +29,6 @@ class MessagesController < ApplicationController
   def content_params
     params.require(:message).permit(:text, :image).merge(user_id: current_user.id)
   end
+
 
 end
