@@ -25,7 +25,7 @@
 .create-room3 a {
   font-size: 10px;
   padding: 14px;
-  color: rgb(245, 213, 110);
+  color: rgb(250, 171, 2);
   margin        : auto;                 /* サンプル用 中央寄せ */
   box-sizing    : border-box;           /* 罫線も含む長さ      */
   width         : 71px;                /* BOXの幅             */
@@ -103,14 +103,14 @@
   display: flex;
 }
 
-.message-user {
-  color: #f3f5f7;
+.message-user1 {
+  color: #090a0a;
   font-size: 16px;
   padding-left: 100px;
 }
 
-.message-date {
-  color: rgb(247, 244, 244);
+.message-date1 {
+  color: rgb(14, 12, 12);
   font-size: 12px;
   padding-left: 10px;
 }
@@ -119,8 +119,8 @@
   margin-top: 10px;
 }
 
-.message-content {
-  color: #ecedef;
+.message-content1 {
+  color: #121213;
   font-size: 14px;
   margin-bottom: 40px;
   text-align: center;
