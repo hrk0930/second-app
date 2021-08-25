@@ -1,0 +1,24 @@
+<% if current_user.id == memo.user_id %>
+<div class="messaged">
+  <div class="upper-message">
+    <div class="message-user">
+      <!-- 投稿したユーザー名情報を出力する -->
+      <%= memo.user.name %>
+    </div>
+    <div class="message-date">
+      <!-- 投稿した時刻を出力する -->
+      <%= l memo.created_at %>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <!-- 投稿したメッセージ内容を記述する -->
+      <%= memo.text %>
+
+       <div class="prototype__manage">
+          <%#= link_to "削除する", memo_path(@memo.id), method: :delete,   class: :prototype__btn %>
+        </div>
+    </div>
+  </div>
+</div>
+<% end %>

@@ -1,4 +1,4 @@
-<div class="chat-header1">
+<div class="chat-header3">
 <div class="room1">
 
     <select name="select" onChange="location.href=value;">
@@ -11,16 +11,12 @@
 </div>
 
 <div class="messages0">
-<%= render partial: 'chat', collection: @chats, class: 'messages1'%>
+<%= render partial: 'memo', collection: @memos, class: 'messages1'%>
 </div>
 
-<%= form_with model: @chat, class: 'form-1', local: true do |f| %>
+<%= form_with model: @memo, class: 'form-2', local: true do |f| %>
   <div class="form-input1">
-    <%= f.text_field :text, class: 'form-message1', placeholder: 'メッセージを送ってね〜♫' %>
-    <label class="form-image1">
-      <span class="image-file">画像</span>
-      <%= f.file_field :image, class: 'hidden1' %>
-    </label>
+    <%= f.text_field :text, class: 'form-message1', placeholder: 'メモを書いてね〜♫' %>
   </div>
   <%= f.submit '送信', class: 'form-submit1' %>
 <% end %>
